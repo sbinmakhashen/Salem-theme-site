@@ -2,9 +2,39 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
 }
 
 body {
     line-height: 1.4;
     background: #2b2c2c;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    color: #fff;
+}
+
+/* nav EL*/
+#nav .container {
+    position: sticky;
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 2rem 8rem;
+}
+
+#nav .nav-logo {
+    width: 3%;
+    cursor: pointer;
+}
+
+#nav .navbar ul {
+   display: flex;
+}
+#nav .navbar ul li {
+    padding: 0 2rem;
 }
