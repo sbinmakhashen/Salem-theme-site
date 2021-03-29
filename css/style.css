@@ -111,7 +111,7 @@ header {
     content: '';
     display: block;
     width: 70%;
-    border-bottom:solid 1px #feb633;
+    height: 2px;
     
 }
 #nav .line-hover.current {
@@ -234,7 +234,7 @@ header {
 #services .container{
     width: 100%;
     height: 100%;
-    padding: 3rem 11rem;
+    padding: 4rem 11rem;
 }
 
 #services .row {
@@ -249,7 +249,7 @@ header {
 #services .header-service .service-content {
     margin: 2rem;
     text-align: center;
-        color: #cccccc;
+    color: #cccccc;
 
 }
 
@@ -376,4 +376,82 @@ header {
 }
 #services .grid-content p {
     margin-right: 1rem;
+}
+
+/* Portfolio */
+#portfolio {
+    width: 100%;
+    height: 100%;
+    background: #303131;
+}
+
+#portfolio .container {
+    width: 100%;
+    height: 100%;
+    padding: 5rem 11rem;
+}
+
+.projects .content-hover {
+    display: none;
+}
+
+#portfolio .protfolio-content {
+    padding: 3rem 0;
+    text-align: center;
+}
+
+#portfolio .protfolio-content h1 {
+    color: #cccccc;
+    font-size: 2.8rem;
+    padding: 1rem 0;
+    font-weight: 600;
+}
+
+#portfolio .protfolio-content h1::after {
+    content: '';
+    display: block;
+    margin: auto;
+    border-bottom: 4px solid #feb633;
+    width: 6%;
+    padding-top: .8rem;
+}
+
+#portfolio .protfolio-content p {
+    color: #9f9f9f;
+    padding: 0 25rem;
+}
+
+#portfolio .port-menu {
+    color: #cfcfcf;
+    padding: 0 20rem;
+    padding-bottom: 2.2rem;
+    font-size: 1rem;
+}
+
+#portfolio .port-menu ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+#portfolio .port-menu ul li { 
+    cursor: pointer;
+}
+
+#portfolio .port-menu ul li:hover { 
+    color: #feb633;
+    transition: all 0.4s ease-in-out;
+}
+#portfolio .port-menu ul li:first-child { 
+    color: #feb633;
+    border-bottom: #feb633 solid 1px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+#portfolio .projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
 }
