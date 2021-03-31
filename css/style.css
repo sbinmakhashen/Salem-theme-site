@@ -52,24 +52,41 @@ a {
     transition: all 0.4s ease-in-out;
 }
 
+.btn-light {
+    display: inline-block;
+    background: #fff;
+    color: #444;
+    padding: 1rem 4rem;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 1.3rem;
+    border: none;
+}
+
+.btn-light:hover {
+    background: #feb633;
+    color: #fff;
+    transition: all 0.4s ease-in-out;
+}
+
 .bg-dark {
     width: auto;
     height: 100%;
     background: #2b2c2c;
-    margin: unset;
     padding: 5;
 }
 
 /* header*/
-header {
+#nav-header {
     width: 100%;
     height: 100%;
-    padding: 2.4rem 0;
+    background: #252525;
 }
 #nav {
     background: #252525;
     position: fixed;
     width: 100%;
+    margin: auto;
     top: 0;
     height: 6rem;
     display: flex;
@@ -398,7 +415,7 @@ header {
 }
 
 #portfolio .container {
-    width: 1120px;
+    max-width: 1120px;
     height: 100%;
     padding: 5rem 0;
     margin: auto;
@@ -468,11 +485,8 @@ header {
     justify-items: center;
     align-items: center;
     margin: auto;
-    /* max-width: 1150px; */
     height: 100%;
     grid-auto-flow: dense;
-    /* z-index: 1; */
-    /* position: relative; */
 }
 
 img {
@@ -489,7 +503,6 @@ img {
     height: 100%;   
     position: relative;
     text-align: center;
-    /* z-index: 1; */
 }
 
 .gallery-item .img-gal {
@@ -542,8 +555,14 @@ img {
 }
 
 /* Work expereince section */
+
+#work-experiences {
+    width: 100%;
+    height: 100%;
+}
+
 #work-experiences .container{
-    width: 1120px;
+    max-width: 1300px;
     height: 100%;
     padding: 5rem 0;
     margin: auto;
@@ -557,6 +576,7 @@ img {
 .w-experience .content{
     padding: 4rem 0;
     text-align: center;
+    margin: auto;
 }
 
 .w-experience .content h1 {
@@ -579,19 +599,79 @@ img {
     color: #9f9f9f;
     padding: 0 4rem;
     padding: 1rem;
+    margin: 0 8rem;
 }
 
-.w-experience .w-history {
-    background: #303131;
-    /* border: 1px solid #cccc; */
-    /* grid-gap: 1rem; */
-    /* padding: 6rem; */
-    /* width: 100%; */
-    display: flex;
 
+.w-experience .w-history {
+    background: #333333;
+    grid-gap: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 19px;
+    width: 100%;
+    height: 100%;
 } 
+.w-experience .w-history .work small,
+.w-experience .w-history .work p {
+    color: #9f9f9f;
+    padding-top: 1rem;
+}
 
 .w-experience .w-history .work  {
-    
-    padding: 2rem;
+    border: 1px #4b4b4b solid;
+    padding: 1rem 3rem;
+    border-radius: 19px;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+}
+
+.w-experience .w-history .work:hover {
+    background: #ffc04b;
+    color: #444;
+    transition: 0.4s ease-in-out;
+    transform: scale(1.1);
+}
+
+.w-experience .w-history .work:hover small,
+.w-experience .w-history .work:hover p {
+    color: #444;
+    padding-top: 1rem;
+}
+
+.w-experience .w-history .work h3 {
+    font-size: 1.4rem;
+}
+
+
+/* Hire me section */
+#hire-me {
+    background: #303131;
+}
+#hire-me .container {
+    width: 1150px;
+    height: 100%;
+    padding: 6rem 0;
+    margin: auto;
+    text-align: center;
+}
+
+#hire-me .container h1 {
+    color: #cccccc;
+    font-size: 2.8rem;
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+#hire-me .container h1::after {
+    content: '';
+    display: block;
+    margin: auto;
+    border-bottom: 4px solid #fff;
+    width: 10%;
+    padding-top: .8rem;
 }
