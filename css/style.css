@@ -52,6 +52,14 @@ a {
     transition: all 0.4s ease-in-out;
 }
 
+.bg-dark {
+    width: auto;
+    height: 100%;
+    background: #2b2c2c;
+    margin: unset;
+    padding: 5;
+}
+
 /* header*/
 header {
     width: 100%;
@@ -68,6 +76,7 @@ header {
     justify-content:space-between;
     align-items: center;
     padding: 0 11rem;
+    z-index: 1;
 }
 
 #nav .nav-logo {
@@ -395,13 +404,6 @@ header {
     margin: auto;
 }
 
-/* projects */
-
-
-.projects .content-hover {
-    /* display: none; */
-}
-
 #portfolio .protfolio-content {
     padding: 3rem 0;
     text-align: center;
@@ -469,7 +471,8 @@ header {
     /* max-width: 1150px; */
     height: 100%;
     grid-auto-flow: dense;
-    /* z-index: -1; */
+    /* z-index: 1; */
+    /* position: relative; */
 }
 
 img {
@@ -478,7 +481,7 @@ img {
     object-fit: cover;
 }
 
-img:hover {
+.gallery-item img:hover {
     opacity: 0.8;
 }
 .gallery-item {
@@ -518,7 +521,7 @@ img:hover {
 
 .gallery-item:hover .content-hover  {
     visibility: visible;
-    background: rgb(254,182,51, 0.9);
+    background: rgba(255, 210, 125, 0.8);
     transition: all 0.4s ease-in-out;
 }
 
@@ -536,4 +539,59 @@ img:hover {
 
 .content-hover .content.content-8{
     padding-top: 20%;
+}
+
+/* Work expereince section */
+#work-experiences .container{
+    width: 1120px;
+    height: 100%;
+    padding: 5rem 0;
+    margin: auto;
+}
+
+.w-experience {
+    width: 100%;
+    height: 100%;
+}
+
+.w-experience .content{
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.w-experience .content h1 {
+    color: #cccccc;
+    font-size: 2.8rem;
+    padding: 1rem 0;
+    font-weight: 600;
+}
+
+.w-experience .content h1::after {
+    content: '';
+    display: block;
+    margin: auto;
+    border-bottom: 4px solid #feb633;
+    width: 10%;
+    padding-top: .8rem;
+}
+
+.w-experience .content p {
+    color: #9f9f9f;
+    padding: 0 4rem;
+    padding: 1rem;
+}
+
+.w-experience .w-history {
+    background: #303131;
+    /* border: 1px solid #cccc; */
+    /* grid-gap: 1rem; */
+    /* padding: 6rem; */
+    /* width: 100%; */
+    display: flex;
+
+} 
+
+.w-experience .w-history .work  {
+    
+    padding: 2rem;
 }
