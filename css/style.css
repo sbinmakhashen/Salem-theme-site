@@ -675,3 +675,72 @@ img {
     width: 10%;
     padding-top: .8rem;
 }
+
+/* Contact form */
+#contact .container {
+    max-width: 1150px;
+    height: 100%;
+    padding: 5rem 0;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+#contact .contact-info {
+    padding: 1rem;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+#contact .contact-info .info-group,
+#contact .contact-info .social-group i {
+    color: #9f9f9f;
+}
+
+#contact .contact-info h3 {
+    font-weight: 400;
+}
+
+#contact .contact-info .info-group p {
+    padding: 2rem 0;
+}
+
+#contact .contact-info .social-group {
+    padding-top: 1rem;
+}
+
+#contact .contact-info .social-group a {
+    margin-right: 1rem;
+    font-size: 1.4rem;
+}
+
+#contact .contact-info .social-group i:hover {
+    color: #feb633;
+    transition: all 0.3s ease-in-out;
+}
+
+/* form  */
+
+#contact .form-fields { 
+    padding-top: 1.6rem;
+}
+
+#contact .form-fields .form-group {
+    padding: .8rem 0;
+}
+
+#contact .form-fields .form-group label {
+    display: block;
+    font-weight: 100;
+    padding-bottom: .3rem;
+}
+
+
+#contact .form-fields .form-group input, 
+#contact .form-fields .form-group textarea {
+    width: 90%;
+    padding: 1rem;
+    background: #333333;
+    outline: 0;
+}
