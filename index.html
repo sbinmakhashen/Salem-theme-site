@@ -13,23 +13,27 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" />
+    <link rel="stylesheet" href="/css/Utilities.css">
     <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
-    <header>
-        <nav id="nav">
-            <a href="index.html" class="logo"><i class="fas fa-chevron-right fa-3x"><Span>S</Span></i></a>
-            <div class="navbar">
-                <ul>
-                    <li><a href="#home" class="line-hover current">Home</a></li>
-                    <li><a href="#about" class="line-hover">About us</a></li>
-                    <li><a href="#services" class="line-hover">Services</a></li>
-                    <li><a href="#portfolio" class="line-hover">Portfolio</a></li>
-                    <li><a href="#contact" class="line-hover">Contact</a></li>
-                </ul>
-            </div>
+    <header id="header">
+        <nav class="nav">
+            <div class="container">
+
+                <a href="index.html" class="logo"><i class="fas fa-chevron-right fa-3x"><Span>S</Span></i></a>
+                <div class="navbar">
+                    <ul>
+                        <li><a href="#" class="line-hover current">Home</a></li>
+                        <li><a href="#about" class="line-hover">About us</a></li>
+                        <li><a href="#services" class="line-hover">Services</a></li>
+                        <li><a href="#portfolio" class="line-hover">Portfolio</a></li>
+                        <li><a href="#contact" class="line-hover">Contact</a></li>
+                    </ul>
+                </div>
         </nav>
+        </div>
     </header>
     <!-- main for section elements -->
     <main>
@@ -38,7 +42,7 @@
             <div class="container">
                 <div class="wrap">
                     <div class="hero-content">
-                        <h1>I'm Salem</h1>
+                        <h2>I'm Salem</h2>
                         <h4>Freelance Web & Mobile UI/UX Designer</h4>
                         <a href="#" class="btn-primary">Hire Me</a>
                     </div>
@@ -88,7 +92,7 @@
                             <!-- <div class="bg-img"></div> -->
                             <div class="grid-content">
                                 <div class="icon"><i class="fas fa-mobile-alt fa-4x"></i></div>
-                                <h1>UX Research</h1>
+                                <h2>UX Research</h2>
                                 <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
                                     fugiat
                                 </p>
@@ -99,7 +103,7 @@
                             <!-- <div class="bg-img"></div> -->
                             <div class="grid-content">
                                 <div class="icon"><i class="fas fa-laptop-code fa-4x"></i></div>
-                                <h1>Web Developement</h1>
+                                <h2>Web Developement</h2>
                                 <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
                                     fugiat
                                 </p>
@@ -110,7 +114,7 @@
                             <!-- <div class="bg-img"></div> -->
                             <div class="grid-content">
                                 <div class="icon"><i class="fas fa-mobile-alt fa-4x"></i></div>
-                                <h1>App Design</h1>
+                                <h2>App Design</h2>
                                 <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
                                     fugiat
                                 </p>
@@ -121,7 +125,7 @@
                             <!-- <div class="bg-img"></div> -->
                             <div class="grid-content">
                                 <div class="icon"><i class="far fa-object-group fa-4x"></i></div>
-                                <h1>Web Design</h1>
+                                <h2>Web Design</h2>
                                 <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
                                     fugiat
                                 </p>
@@ -377,16 +381,26 @@
                             <input type="text" name="name" id="name" placeholder="Type your name">
                         </div>
 
-                        <!-- <div class="form-group"> -->
-                        <!-- <div class="phone"> -->
-                        <label for="phone">PHONE NUMBER</label>
-                        <input type="text" name="phone" id="phone" placeholder="Type your phone number">
-                        <!-- </div> -->
-                        <!-- <div class="email"> -->
-                        <label for="email">EMAIL</label>
-                        <input type="email" name="email" id="email" placeholder="Type your email address">
-                        <!-- </div> -->
-                        <!-- </div> -->
+                        <div class="form-group">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <!-- <div class="group-2"> -->
+                                        <label for="phone">PHONE NUMBER</label>
+                                        <input type="text" name="phone" id="phone" placeholder="Type your phone number">
+                                    </td>
+                                    <td>
+
+                                        <!-- </div> -->
+                                        <!-- <div class="group-2"> -->
+                                        <label for="email">EMAIL</label>
+                                        <input type="email" name="email" id="email"
+                                            placeholder="Type your email address">
+                                        <!-- </div> -->
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
 
                         <div class="form-group">
                             <label for="message">Message</label>
@@ -402,7 +416,7 @@
     </main>
 
     <footer id="footer">
-
+        <small>Copyright &copy; 2021</small>
     </footer>
 
 </body>
