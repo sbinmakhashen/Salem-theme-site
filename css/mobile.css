@@ -1,0 +1,126 @@
+/* styling on smaller screens */
+
+@media screen and (max-width: 768px) {
+  /* Utilities */
+  h1 {
+    font-size: 2.3rem;
+  }
+  p {
+    font-size: .9rem;
+    font-weight: 400;
+    line-height: 1.7;
+  }
+  .container {
+    width: 95%;
+  }
+  .btn-primary {
+    padding: .8rem 3.8rem;
+  }
+  /* hero section */
+  .hero .wrap {
+    grid-template-columns: none;
+  }
+  .hero .hero-content h2 {
+    font-size: 2.9rem;
+    padding: 1.4rem 0;
+  }
+  .hero .hero-content h4 {
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+  .hero .hero-img img {
+    width: 90%;
+  }
+  /* about section */
+  #about {
+    padding-top: unset;
+  }
+  #about .content {
+    grid-template-columns: unset;
+  }
+  #about .bg-img {
+    height: 300px;
+    background-position: center;
+  }
+  #about .about-group-two p {
+    margin-left: unset;
+  }
+  /* service section */
+  #services .header-service .service-content,
+  #services .header-service p {
+    padding: unset;
+    margin: unset;
+  } 
+  #services .header-service{
+    padding: 1rem 0;
+  }
+  #services .grid-cards {
+    grid-template-columns: unset;
+  }
+  /* Portfolio section */
+  #portfolio .protfolio-content p {
+    padding: unset;
+  } 
+#portfolio .port-menu ul {
+  font-size: .9rem;
+}
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .projects img{
+    height: unset;
+  }
+  .gallery-item.img-col,
+  .gallery-item:first-child {
+    grid-row: unset;
+    grid-column: unset;   
+}
+.content-hover.con-8:last-child {
+  top: 0;
+  height: 50%;
+}
+/* work experience */
+.w-experience .content p {
+  margin: unset;
+}
+.w-experience .w-history {
+  flex-direction: column;
+}
+/* hire me */
+#hire-me .container h1 {
+  font-size: 2.2rem;
+}
+}
+
+/* media queries small screen */
+@media screen and (max-width: 500px) {
+  .btn-secondary {
+    padding: .6rem .4rem;
+  }
+  /* portfolio */
+  #portfolio .port-menu ul li{
+    font-size: .8rem;
+  }
+  /* work experience */
+  .projects {
+    grid-template-columns: repeat(1, 1fr);
+    width: 95%;
+  }
+  .content-hover.con-8:last-child {
+    top: 50%;
+    height: 100%;
+  }
+  /* contact */
+  #contact .contact-info { 
+    margin-top: unset;
+}
+  #contact h1,
+  #contact h1::after{ 
+    text-align: center;
+    margin: auto;
+}
+  #contact .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
