@@ -99,7 +99,7 @@
   }
   /* portfolio */
   #portfolio .port-menu ul li{
-    font-size: .8rem;
+    font-size: .7rem;
   }
   /* work experience */
   .projects {
@@ -122,5 +122,5 @@
   #contact .container {
     display: flex;
     flex-direction: column;
-  }
+    }
 }

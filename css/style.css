@@ -537,7 +537,7 @@ img {
 
 #contact .contact-info {
     padding: 1rem;
-    margin-top: 8rem;
+    margin-top: 3.8rem;
     align-items: center;
     width: 100%;
     height: 100%;
@@ -587,9 +587,14 @@ img {
     padding-bottom: .3rem;
 }
 
+#contact h1 {
+    text-align: center;
+    padding-top: 7rem;
+}
 #contact h1::after {
     content: '';
     margin-left: 6rem;
+    margin: auto;
 } 
 
 #contact .form-fields .form-group table {
