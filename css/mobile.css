@@ -16,6 +16,25 @@
   .btn-primary {
     padding: .8rem 3.8rem;
   }
+  /* hamburger menu */
+  .nav .menu-icon {
+    padding: 1rem;
+  }
+  .nav .menu-icon .navicon {
+    display: block;
+  }
+  .nav .navbar .menu-btn:checked ~ ul {
+    display: flex;
+    flex-direction: column;
+}
+.nav .navbar .menu-btn:checked ~ ul li {
+  float: left;
+}
+  .nav .navbar ul {
+    display: none;
+    max-height: none;
+    float: right;
+  }
   /* hero section */
   .hero .wrap {
     grid-template-columns: none;

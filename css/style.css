@@ -68,6 +68,7 @@ a {
 
 .nav .navbar ul {
    display: flex;
+   flex-wrap: wrap;
 }
 .nav .navbar ul li {
     display: inline-block;
@@ -104,7 +105,62 @@ a {
     transition: all var(--transition-speed) ease-in-out;
 }
 
-/* hero section */
+
+/* responsive menu */
+.nav .menu-icon {
+    position: relative;
+    display: inline-block;
+    float: right;
+    cursor: pointer;
+}
+.nav .menu-icon .navicon {
+    background: #cfcfcf;
+    height: 4px;
+    width: 1.1rem;
+    display: none;
+    position: relative;
+    transition: all 0.4s ease-in-out;
+}
+.nav .menu-icon .navicon::before,
+.nav .menu-icon .navicon::after {
+    content: '';
+    background: #cfcfcf;
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all 0.4s ease-in-out;
+}
+.nav .menu-icon .navicon::before {
+    top: .4rem;
+}
+.nav .menu-icon .navicon::after {
+    bottom: .4rem;
+}
+
+.nav .menu-btn {
+    display: none;
+}
+.nav .navbar .menu-btn:checked ~ ul {
+    max-height: 240px;
+    display: block;
+}
+.nav .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+} 
+.nav .menu-btn:checked ~ .menu-icon .navicon::before {
+    top: 0;
+    transform: rotate(-45deg);
+}
+.nav .menu-btn:checked ~ .menu-icon .navicon::after {
+    top: 0;
+    transform: rotate(45deg);
+}
+
+/* .nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+} */
 
 .hero .container {
     padding-bottom: unset;
