@@ -17,13 +17,16 @@
     padding: .8rem 3.8rem;
   }
   /* hamburger menu */
-  .nav .menu-icon {
+  .nav .container {
+    align-items: unset;
+  }
+   .nav .menu-icon {
     padding: 1rem;
   }
   .nav .menu-icon .navicon {
     display: block;
   }
-  .nav .navbar .menu-btn:checked ~ ul {
+  .nav .navbar .menu-btn:checked ~ .nav-lists ul {
     display: flex;
     flex-direction: column;
 }
@@ -34,7 +37,15 @@
     display: none;
     max-height: none;
     float: right;
+    margin-top: 1rem;
   }
+  .nav .nav-lists ul {
+    /* float: left; */
+  }
+  .nav .navbar ul li {
+    margin: 1rem 0;
+  }
+
   /* hero section */
   .hero .wrap {
     grid-template-columns: none;

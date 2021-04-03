@@ -116,7 +116,7 @@ a {
 .nav .menu-icon .navicon {
     background: #cfcfcf;
     height: 4px;
-    width: 1.1rem;
+    width: 1.3rem;
     display: none;
     position: relative;
     transition: all 0.4s ease-in-out;
@@ -137,11 +137,10 @@ a {
 .nav .menu-icon .navicon::after {
     bottom: .4rem;
 }
-
 .nav .menu-btn {
     display: none;
 }
-.nav .navbar .menu-btn:checked ~ ul {
+.nav .navbar .menu-btn:checked ~ .nav-lists ul {
     max-height: 240px;
     display: block;
 }
@@ -156,12 +155,6 @@ a {
     top: 0;
     transform: rotate(45deg);
 }
-
-/* .nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
-.nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
-  top: 0;
-} */
-
 .hero .container {
     padding-bottom: unset;
 }
