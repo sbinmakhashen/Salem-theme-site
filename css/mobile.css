@@ -26,26 +26,27 @@
   .nav .menu-icon .navicon {
     display: block;
   }
-  .nav .navbar .menu-btn:checked ~ .nav-lists ul {
+  .nav .menu-btn:checked ~ ul {
     display: flex;
     flex-direction: column;
+    overflow-y: none;
 }
-.nav .navbar .menu-btn:checked ~ ul li {
-  float: left;
+.nav ul {
+  display: none;
+  position: absolute;
+  top: 5rem;
+  background: #252525;
+  width: 100%;
+  left: 0;
+  transition: all var(--transition-speed) ease-in-out;
 }
-  .nav .navbar ul {
-    display: none;
-    max-height: none;
-    float: right;
-    margin-top: 1rem;
-  }
-  .nav .nav-lists ul {
-    /* float: left; */
-  }
-  .nav .navbar ul li {
-    margin: 1rem 0;
-  }
-
+.nav .line-hover.current::after,
+.nav .line-hover:hover::after {
+  width: 8%;
+}
+.nav  ul li {
+    margin: .5rem 0;
+}
   /* hero section */
   .hero .wrap {
     grid-template-columns: none;

@@ -66,16 +66,16 @@ a {
     transition: all var(--transition-speed) ease-in-out;
 }
 
-.nav .navbar ul {
+.nav  ul {
    display: flex;
    flex-wrap: wrap;
 }
-.nav .navbar ul li {
+.nav  ul li {
     display: inline-block;
     padding: 0 1.3rem;
 }
 
-.nav .navbar ul li a:hover {
+.nav  ul li a:hover {
     color: var(--primary-color);
     transition: all var(--transition-speed) ease-in-out;
 }
@@ -140,8 +140,7 @@ a {
 .nav .menu-btn {
     display: none;
 }
-.nav .navbar .menu-btn:checked ~ .nav-lists ul {
-    max-height: 240px;
+.nav  .menu-btn:checked ~ ul {
     display: block;
 }
 .nav .menu-btn:checked ~ .menu-icon .navicon {
