@@ -33,9 +33,13 @@ a {
     z-index: 1;
 }
 .nav {
-    background: #252525;
+    background: transparent;
+    transition: all 0.4 ease-in-out;
 }
-
+nav.bg-onscroll {
+    background: #252525;
+    transition: all 0.4 ease-in-out;
+}
 .nav .container {
     display: flex;
     justify-content:space-between;

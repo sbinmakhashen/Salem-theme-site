@@ -35,10 +35,20 @@
   display: none;
   position: absolute;
   top: 5rem;
-  background: #252525;
+  background: #2b2c2c;
   width: 100%;
   left: 0;
   transition: all var(--transition-speed) ease-in-out;
+}
+.nav ul .ul-bg {
+   display: none;
+  position: absolute;
+  top: 5rem;
+  /* background: #2b2c2c; */
+  width: 100%;
+  left: 0;
+  transition: all var(--transition-speed) ease-in-out;
+    background: #252525;
 }
 .nav .line-hover.current::after,
 .nav .line-hover:hover::after {

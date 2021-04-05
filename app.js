@@ -1,8 +1,11 @@
 window.onscroll = () => {
-    const navbar = document.querySelector('#nav');
-    if (this.scrollY <= 100) {
-        navbar.classList = '';
+    const navbar = document.querySelector('.nav');
+    const pixTop = window.scrollY;
+    if (pixTop >= 70) {
+        navbar.classList.add('bg-onscroll')
+        navbar.className.add('ul-bg')
     } else {
-        navbar.className = 
+        navbar.classList.remove('bg-onscroll')
+        navbar.className.remove('ul-bg')
     }
 }
