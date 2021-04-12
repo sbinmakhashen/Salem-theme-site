@@ -86,17 +86,14 @@ nav.bg-onscroll {
 .nav ul li a.active {
     color: var(--primary-color);
     background: #252525;
+    transition: all var(--transition-speed) ease-in-out;
 }
 
-.nav .line-hover.current::after {
+.nav ul li a.active::after {
     content: '';
     display: block;
     width: 70%;
     height: 2px;
-    
-}
-.nav .line-hover.current {
-    color: var(--primary-color);
 }
 .nav .line-hover::after {
     content: '';

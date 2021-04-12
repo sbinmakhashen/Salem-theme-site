@@ -40,7 +40,7 @@
   left: 0;
   transition: all var(--transition-speed) ease-in-out;
 }
-.nav .line-hover.current::after,
+.nav ul li a.active::after,
 .nav .line-hover:hover::after {
   width: 8%;
 }
