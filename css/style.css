@@ -83,7 +83,7 @@ nav.bg-onscroll {
     color: var(--primary-color);
     transition: all var(--transition-speed) ease-in-out;
 }
-.nav ul li.active {
+.nav ul li a.active {
     color: var(--primary-color);
     background: #252525;
 }
