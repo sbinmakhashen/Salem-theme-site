@@ -91,10 +91,7 @@
   /* Portfolio section */
   #portfolio .protfolio-content p {
     padding: unset;
-  } 
-#portfolio .port-menu ul {
-  font-size: .9rem;
-}
+  }
   .projects {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -127,10 +124,6 @@
 @media screen and (max-width: 500px) {
   .btn-secondary {
     padding: .6rem .4rem;
-  }
-  /* portfolio */
-  #portfolio .port-menu ul li{
-    font-size: .7rem;
   }
   /* work experience */
   .projects {
