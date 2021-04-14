@@ -20,12 +20,39 @@ addEventListener('scroll', () => {
     navLinks.forEach(links => {
         // getting the sections by their has/#
         let sections = document.querySelector(links.hash);
-        console.log(sections);
+        // console.log(sections);
         if (sections.offsetTop <= topPage
             && sections.offsetTop + sections.offsetHeight > topPage) {
             links.classList.add('active')
         } else {
             links.classList.remove('active')
         }
+    });
+});
+
+// filter projects
+// get project's li's
+const portLi = document.querySelectorAll('.port-menu ul li');
+// get projects
+const portGal = document.querySelectorAll('.gallery-item');
+
+portLi.forEach(lis => {
+    lis.addEventListener('click', () => {
+        // portLi.forEach(li => {
+        //     li.className = "";
+        // });
+        // lis.className = "active";
+        // showing projects
+        // filter by attribute
+        let value = lis.textContent;
+        // loop through projects 
+        portGal.forEach(disp => {
+            disp.style.display = 'none';
+            // show proj if attribute === to the textContent
+            if (disp.getAttribute("data-id") === value || value === 'All') {
+                disp.style.display = 'block';
+            }
+        });
+
     });
 });
