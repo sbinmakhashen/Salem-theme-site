@@ -395,6 +395,7 @@ nav.bg-onscroll {
 #portfolio .port-menu ul {
     display: flex;
     justify-content: center;
+    transition: all var(--transition-speed) ease-in-out;
 
 }
 
@@ -402,7 +403,17 @@ nav.bg-onscroll {
     cursor: pointer;
     margin: 0 1rem;
 }
+/* #portfolio .port-menu ul li.active {
+    width: 50%;
+    padding: 2px;
+    transition: all var(--transition-speed) ease-in-out;
+}
 
+#portfolio .port-menu ul li.delete {
+    width: 0%;
+    padding: 0;
+    transition: all var(--transition-speed) ease-in-out;
+} */
 #portfolio .port-menu ul li:hover { 
     color: var(--primary-color);
     transition: all var(--transition-speed) ease-in-out;
@@ -441,6 +452,19 @@ img {
     height: 100%;   
     position: relative;
     text-align: center;
+    transition: all var(--transition-speed) ease-in-out;
+}
+
+.gallery-item .active {
+    width: 50%;
+    padding: 2px;
+    transition: all var(--transition-speed) ease-in-out;
+}
+
+.gallery-item .delete {
+    width: 0%;
+    padding: 0;
+    transition: all var(--transition-speed) ease-in-out;
 }
 
 .gallery-item .img-gal {

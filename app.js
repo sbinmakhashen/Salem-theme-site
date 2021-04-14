@@ -38,19 +38,25 @@ const portGal = document.querySelectorAll('.gallery-item');
 
 portLi.forEach(lis => {
     lis.addEventListener('click', () => {
-        // portLi.forEach(li => {
-        //     li.className = "";
-        // });
-        // lis.className = "active";
+        portLi.forEach(li => {
+            // li.classList.remove('active');
+            // li.classList.add('delete');
+        });
+        // lis.classList.add('active');
+        // lis.classList.remove('delete');
         // showing projects
         // filter by attribute
         let value = lis.textContent;
         // loop through projects 
         portGal.forEach(disp => {
             disp.style.display = 'none';
+            li.classList.remove('active');
+            li.classList.add('delete');
             // show proj if attribute === to the textContent
             if (disp.getAttribute("data-id") === value || value === 'All') {
                 disp.style.display = 'block';
+                lis.classList.add('active');
+                lis.classList.remove('delete');
             }
         });
 
