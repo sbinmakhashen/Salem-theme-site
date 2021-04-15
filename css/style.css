@@ -403,25 +403,14 @@ nav.bg-onscroll {
     cursor: pointer;
     margin: 0 1rem;
 }
-/* #portfolio .port-menu ul li.active {
-    width: 50%;
-    padding: 2px;
-    transition: all var(--transition-speed) ease-in-out;
-}
-
-#portfolio .port-menu ul li.delete {
-    width: 0%;
-    padding: 0;
-    transition: all var(--transition-speed) ease-in-out;
-} */
 #portfolio .port-menu ul li:hover { 
     color: var(--primary-color);
     transition: all var(--transition-speed) ease-in-out;
 }
-#portfolio .port-menu ul li:first-child { 
+#portfolio .port-menu ul li.active { 
     color: var(--primary-color);
     border-bottom: var(--primary-color) solid 1px;
-    padding-bottom: 5px;
+    padding-bottom: 4px;
     text-align: center;
 }
 
@@ -455,16 +444,23 @@ img {
     transition: all var(--transition-speed) ease-in-out;
 }
 
-.gallery-item .active {
-    width: 50%;
-    padding: 2px;
-    transition: all var(--transition-speed) ease-in-out;
+.gallery-item.hide {
+    display: none;
 }
 
-.gallery-item .delete {
-    width: 0%;
-    padding: 0;
-    transition: all var(--transition-speed) ease-in-out;
+.gallery-item.show {
+    animation: animate var(--transition-speed) ease;
+}
+@keyframes animate{
+    0%{
+        transform: scale(0.5);
+        /* opacity: 0; */
+    }
+    100%{
+        transform: scale(1);
+        /* opacity: 1; */
+    }
+    
 }
 
 .gallery-item .img-gal {

@@ -12,6 +12,7 @@ window.onscroll = () => {
 }
 
 // highlighting nav links on scroll
+
 addEventListener('scroll', () => {
     // init nav links
     let navLinks = document.querySelectorAll('nav ul li a');
@@ -31,6 +32,7 @@ addEventListener('scroll', () => {
 });
 
 // filter projects
+
 // get project's li's
 const portLi = document.querySelectorAll('.port-menu ul li');
 // get projects
@@ -39,24 +41,21 @@ const portGal = document.querySelectorAll('.gallery-item');
 portLi.forEach(lis => {
     lis.addEventListener('click', () => {
         portLi.forEach(li => {
-            // li.classList.remove('active');
-            // li.classList.add('delete');
+            li.className = ""
         });
-        // lis.classList.add('active');
-        // lis.classList.remove('delete');
+        lis.className = "active";
         // showing projects
         // filter by attribute
         let value = lis.textContent;
         // loop through projects 
         portGal.forEach(disp => {
-            disp.style.display = 'none';
-            li.classList.remove('active');
-            li.classList.add('delete');
             // show proj if attribute === to the textContent
             if (disp.getAttribute("data-id") === value || value === 'All') {
-                disp.style.display = 'block';
-                lis.classList.add('active');
-                lis.classList.remove('delete');
+                disp.classList.remove('hide');
+                disp.classList.add('show');
+            } else {
+                disp.classList.add('hide');
+                disp.classList.remove('show');
             }
         });
 
