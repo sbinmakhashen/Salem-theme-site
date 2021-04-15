@@ -187,11 +187,12 @@ nav.bg-onscroll {
    font-size: 4rem;
    padding-top: 10rem;
 }
-.hero .hero-content h4 {
+.hero .hero-content .type {
    font-size: 2rem;
-   font-weight: lighter;
+   font-weight: 300;
    color: var(--secondary-color);
    padding-bottom: 1.5rem;
+   animation: ;
 }
 
 /* about section */
@@ -696,6 +697,7 @@ img {
     padding: .8rem .5rem;
     margin-top: .4rem;
 }
+
 
 /* Footer */
 #footer {

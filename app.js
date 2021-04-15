@@ -61,3 +61,46 @@ portLi.forEach(lis => {
 
     });
 });
+
+// regular expressions for form
+function regExpression() {
+    // regular expression for name input field
+    document.getElementById('name').addEventListener('blur', () => {
+        const name = document.getElementById('name');
+        // regular expression
+        const regName = /^[a-z]{2,10}$/i;
+        // validation
+        if (!regName.test(name.value)) { //if regName did not match value of name
+            document.querySelector('.name-invalid').style.display = 'block';
+        } else {
+            document.querySelector('.name-invalid').style.display = 'none';
+        }
+    });
+    // regular expression for phone input field
+    document.getElementById('phone').addEventListener('blur', () => {
+        const phone = document.getElementById('phone');
+        // regular expression
+        const regPhone = /^\(?\d{3}\)?[-. ]?\d{3}[-. ]?\d{4}$/;
+        // validation
+        if (!regPhone.test(phone.value)) {
+            document.querySelector('.phone-invalid').style.display = 'block';
+        } else {
+            document.querySelector('.phone-invalid').style.display = 'none';
+        }
+    });
+
+    // regular expression for email input field
+    document.getElementById('email').addEventListener('blur', () => {
+        const email = document.getElementById('email');
+        // regular expression
+        const regemail = /^([a-z0-9_\-\.]+)@([a-z0-9_\-\.]+)\.([a-z]{2,5})$/i;
+        // validation
+        if (!regemail.test(email.value)) {
+            document.querySelector('.email-invalid').style.display = 'block';
+        } else {
+            document.querySelector('.email-invalid').style.display = 'none';
+        }
+    });
+
+}
+regExpression();

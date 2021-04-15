@@ -81,3 +81,13 @@ h1::after {
     width: 10%;
     padding-top: .8rem;
 }
+
+.name-invalid,
+.phone-invalid,
+.email-invalid {
+    display: none;
+    color: #FF0000;
+    font-size: .8rem;
+    margin-top: .4rem;
+}
+
