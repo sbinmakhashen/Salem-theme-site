@@ -188,11 +188,24 @@ nav.bg-onscroll {
    padding-top: 10rem;
 }
 .hero .hero-content .type {
-   font-size: 2rem;
+    font-size: 2rem;
    font-weight: 300;
    color: var(--secondary-color);
    padding-bottom: 1.5rem;
-   animation: ;
+}
+.hero .hero-content .type::after{
+    content: "";
+    border-right: solid 3px #adacac;
+    margin-left: .2rem;
+    animation: blink 0.6s infinite ease;
+}
+@keyframes blink {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 /* about section */
