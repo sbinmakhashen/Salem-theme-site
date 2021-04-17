@@ -278,97 +278,22 @@ nav.bg-onscroll {
     padding: 0 5rem;
 }
 #services .grid-cards {
-    display: grid;
-    grid-template-columns: repeat(2, 4fr);
-    grid-gap: 1.6rem;
+    display: flex;
+    justify-content: center;
 }
-/* first col */
-#services .grid-col-one::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(250deg,#304a9e, #4991b4);
-    border-radius: 10px;
-    opacity: 0.8;
-    z-index: -1;
+#services .grid-cards h2 {
+    margin: 0 1rem;
+    background: rgb(65, 64, 64);
+    padding: .4rem;
+    border-radius: 1.4rem;
+    cursor: pointer;
+}
+#services .grid-cards h2:hover {
+    color: var(--primary-color);
+    transition: all 0.4s ease-in-out;
+    transform: scale(1.1);
 }
 
-#services .grid-col-one {
-    position: relative;
-    padding: 3.3rem 5rem;
-    border-radius: 10px;
-    background: url(http://droitthemes.com/wp/mak/wp-content/uploads/2018/09/service_bg.jpg) no-repeat center center/cover;
-    z-index: -1;
-}
-
-/* second coloumn */
-#services .grid-col-two::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(250deg,rgb(255,211,36), #e6a924);
-    border-radius: 10px;
-    opacity: 0.8;
-    z-index: -1;
- }
-
- #services .grid-col-two {
-    position: relative;
-    padding: 3.3rem 5rem;
-    border-radius: 10px;
-    background: url(http://droitthemes.com/wp/mak/wp-content/uploads/2018/10/blog_img_1.png) no-repeat center center/cover;
-    z-index: -1;
-}
-
-/* third coloumn */
-#services .grid-col-three::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(250deg, rgba(180,61,255,0.99), rgba(214,54,208,0.99));
-    border-radius: 10px;
-    opacity: 0.8;
-    z-index: -1;
- }
-
-#services .grid-col-three {
-    position: relative;
-    padding: 3.3rem 5rem;
-    border-radius: 10px;
-    background: url(http://droitthemes.com/wp/mak/wp-content/uploads/2018/10/blog_img_3.png) no-repeat center center/cover;
-    z-index: -1;
-}
-
-/* fourth coloumn */
-#services .grid-col-four::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(250deg, rgba(3,220,13,0.99), rgba(2,204,71,0.99));
-    border-radius: 10px;
-    opacity: 0.8;
-    z-index: -1;
- }
-
-#services .grid-col-four {
-    position: relative;
-    padding: 3.3rem 5rem;
-    border-radius: 10px;
-    background: url(http://droitthemes.com/wp/mak/wp-content/uploads/2018/10/blog_img_4.png) no-repeat center center/cover;
-    z-index: -1;
-}
 
 #services .grid-content h2 {
     padding-bottom: 1rem;
@@ -525,81 +450,6 @@ img {
 .content-hover .content.content-8{
     padding-top: 20%;
 }
-
-/* Work expereince section */
-
-#work-experiences {
-    width: 100%;
-    height: 100%;
-}
-
-.w-experience {
-    width: 100%;
-    height: 100%;
-}
-
-#work-experiences .container {
-    max-width: 1250px;
-}
-
-.w-experience .content{
-    padding: 4rem 0;
-    text-align: center;
-    margin: auto;
-}
-
-.w-experience .content p {
-    color: var(--secondary-color);
-    padding: 0 4rem;
-    padding: 1rem;
-    max-width: 950px;
-    margin: auto;
-}
-
-
-.w-experience .w-history {
-    background: #333333;
-    grid-gap: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    border-radius: 25px;
-    width: 100%;
-    height: 100%;
-} 
-.w-experience .w-history .work small,
-.w-experience .w-history .work p {
-    color: var(--secondary-color);
-    padding-top: 1rem;
-}
-
-.w-experience .w-history .work  {
-    border: 1px #4b4b4b solid;
-    padding: 1rem .8rem;
-    border-radius: 19px;
-    height: 100%;
-    width: 100%;
-    align-items: center;
-}
-
-.w-experience .w-history .work:hover {
-    background: #ffc04b;
-    color: #444;
-    transition: var(--transition-speed) ease-in-out;
-    transform: scale(1.1);
-}
-
-.w-experience .w-history .work:hover small,
-.w-experience .w-history .work:hover p {
-    color: #444;
-    padding-top: 1rem;
-}
-
-.w-experience .w-history .work h3 {
-    font-size: 1.4rem;
-}
-
 
 /* Hire me section */
 #hire-me {
