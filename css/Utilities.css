@@ -59,6 +59,24 @@
     transition: all 0.4s ease-in-out;
 }
 
+.btn-dark {
+    display: inline-block;
+    padding: 1rem .5rem;
+    background: #2b2c2c;
+    color: #feb633;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 1.3rem;
+    border: none;
+    border: #feb633 2px solid;
+    cursor: pointer;
+}
+.btn-dark:hover {
+    background: #feb633;
+    color: #fff;
+    transition: all 0.4s ease-in-out;
+}
+
 .bg-dark {
     width: auto;
     height: 100%;
