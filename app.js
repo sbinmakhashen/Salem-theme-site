@@ -100,7 +100,7 @@ function regExpression() {
     document.getElementById('name').addEventListener('blur', () => {
         const name = document.getElementById('name');
         // regular expression
-        const regName = /^[a-z]{2,10}$/i;
+        const regName = /^[a-z]?[-. ]?{2,10}$/i;
         // validation
         if (!regName.test(name.value)) { //if regName did not match value of name
             document.querySelector('.name-invalid').style.display = 'block';
