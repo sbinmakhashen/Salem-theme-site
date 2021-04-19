@@ -64,34 +64,34 @@ addEventListener('scroll', () => {
 
 // filter projects
 
-// // get project's li's
-// const portLi = document.querySelectorAll('.port-menu ul li');
-// // get projects
-// const portGal = document.querySelectorAll('.gallery-item');
+// get project's li's
+const portLi = document.querySelectorAll('.port-menu ul li');
+// get projects
+const portGal = document.querySelectorAll('.gallery-item');
 
-// portLi.forEach(lis => {
-//     lis.addEventListener('click', () => {
-//         portLi.forEach(li => {
-//             li.className = ""
-//         });
-//         lis.className = "active";
-//         // showing projects
-//         // filter by attribute
-//         let value = lis.textContent;
-//         // loop through projects 
-//         portGal.forEach(disp => {
-//             // show proj if attribute === to the textContent
-//             if (disp.getAttribute("data-id") === value || value === 'All') {
-//                 disp.classList.remove('hide');
-//                 disp.classList.add('show');
-//             } else {
-//                 disp.classList.add('hide');
-//                 disp.classList.remove('show');
-//             }
-//         });
+portLi.forEach(lis => {
+    lis.addEventListener('click', () => {
+        portLi.forEach(li => {
+            li.className = ""
+        });
+        lis.className = "active";
+        // showing projects
+        // filter by attribute
+        let value = lis.textContent;
+        // loop through projects 
+        portGal.forEach(disp => {
+            // show proj if attribute === to the textContent
+            if (disp.getAttribute("data-id") === value || value === 'All') {
+                disp.classList.remove('hide');
+                disp.classList.add('show');
+            } else {
+                disp.classList.add('hide');
+                disp.classList.remove('show');
+            }
+        });
 
-//     });
-// });
+    });
+});
 
 
 // // regular expressions for form
