@@ -93,11 +93,14 @@
     padding: unset;
   }
   .projects {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
   .projects img{
     height: unset;
   }
+  .content-hover .content.first {
+    padding-top: 50%;
+}
   .gallery-item.img-col,
   .gallery-item:first-child {
     grid-row: unset;
