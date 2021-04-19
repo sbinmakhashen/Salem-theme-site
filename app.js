@@ -11,38 +11,38 @@ window.onscroll = () => {
     }
 }
 
-// // Typewriting effect  
-// const texts = ["Front-End Developer", "Web Developer", "UI Developer"]
-// // count el in array
-// let count = 0;
-// // count chars
-// let index = 0;
-// let currentText = '';
-// let letter = '';
-// function typing() {
-//     // validate
-//     if (count === texts.length) {
-//         // it resets after done counting the els in array
-//         count = 0;
-//     }
-//     // setting current text
-//     currentText = texts[count];
-//     // go through the el letter by letter
-//     letter = currentText.slice(0, index++);
-//     // getting the h4 tag to insert the texts inside of it
-//     document.querySelector('.type').textContent = letter;
-//     // validate
-//     if (letter.length === currentText.length) {
-//         // reset index to start counting each el from 0 index
-//         index = 0;
-//         // increment count by one
-//         count++;
-//     }
-//     // type texts every 2 sec
-//     setTimeout(typing, 200);
-// }
-// typing();
-// // highlighting nav links on scroll
+// Typewriting effect  
+const texts = ["Front-End Developer", "Web Developer", "UI Developer"]
+// count el in array
+let count = 0;
+// count chars
+let index = 0;
+let currentText = '';
+let letter = '';
+function typing() {
+    // validate
+    if (count === texts.length) {
+        // it resets after done counting the els in array
+        count = 0;
+    }
+    // setting current text
+    currentText = texts[count];
+    // go through the el letter by letter
+    letter = currentText.slice(0, index++);
+    // getting the h4 tag to insert the texts inside of it
+    document.querySelector('.type').textContent = letter;
+    // validate
+    if (letter.length === currentText.length) {
+        // reset index to start counting each el from 0 index
+        index = 0;
+        // increment count by one
+        count++;
+    }
+    // type texts every 2 sec
+    setTimeout(typing, 200);
+}
+typing();
+// highlighting nav links on scroll
 
 // addEventListener('scroll', () => {
 //     // init nav links
