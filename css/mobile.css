@@ -77,11 +77,6 @@
     margin-left: unset;
   }
   /* service section */
-  #services .header-service .service-content,
-  #services .header-service p {
-    padding: unset;
-    margin: unset;
-  } 
   #services .header-service{
     padding: 1rem 0;
   }
@@ -128,6 +123,19 @@
   .btn-secondary {
     padding: .6rem .4rem;
   }
+  /* skills */
+  #services .grid-cards {
+    justify-content: unset;
+    position: relative;
+  }
+  #services .grid-cards h2:last-child{
+    position: absolute;
+    bottom: -3.6rem;
+    right: -2rem;
+  }
+  #services .grid-cards {
+    width: 50%;
+  }
   /* work experience */
   .projects {
     grid-template-columns: repeat(1, 1fr);
@@ -137,8 +145,11 @@
     top: 50%;
     height: 100%;
   }
-  #services .grid-cards {
-    width: 50%;
+  .gallery-item:hover .content {
+   transform: translateY(-2rem);
+}
+  .content-hover .content a {
+    font-size: .8rem;
   }
   /* contact */
   #contact .contact-info { 

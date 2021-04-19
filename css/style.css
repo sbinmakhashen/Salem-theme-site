@@ -259,12 +259,6 @@ nav.bg-onscroll {
 }
 
 /* Services section */
-
-#services .row {
-    display: flex;
-    flex-wrap: wrap;
-}
-
 #services .header-service {
     padding: 2rem;
 }
@@ -292,19 +286,6 @@ nav.bg-onscroll {
     transform: scale(1.1);
 }
 
-
-#services .grid-content h2 {
-    padding-bottom: 1rem;
-    font-size: 2rem;
-}
-
-#services .grid-content .icon {
-    padding-bottom: 2rem;
-}
-#services .grid-content p {
-    margin-right: 1rem;
-}
-
 /* Portfolio */
 #portfolio {
     width: 100%;
@@ -325,7 +306,7 @@ nav.bg-onscroll {
 
 #portfolio .port-menu {
     color: #cfcfcf;
-    padding-bottom: 2.2rem;
+    margin-bottom: 2.2rem;
     font-size: 1rem;
 }
 
