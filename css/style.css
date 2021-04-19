@@ -275,9 +275,6 @@ nav.bg-onscroll {
     color: var(--secondary-color);
 }
 
-#services .header-service p{
-    padding: 0 5rem;
-}
 #services .grid-cards {
     display: flex;
     justify-content: center;
@@ -288,7 +285,6 @@ nav.bg-onscroll {
     background: rgb(49, 49, 49);
     padding: .4rem;
     border-radius: 1.4rem;
-    cursor: pointer;
 }
 #services .grid-cards h2:hover {
     color: var(--primary-color);

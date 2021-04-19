@@ -85,8 +85,8 @@
   #services .header-service{
     padding: 1rem 0;
   }
-  #services .grid-cards {
-    grid-template-columns: unset;
+  #services .grid-cards h2 {
+    margin: 0 .2rem;
   }
   /* Portfolio section */
   #portfolio .protfolio-content p {
@@ -136,6 +136,9 @@
   .content-hover.con-8:last-child {
     top: 50%;
     height: 100%;
+  }
+  #services .grid-cards {
+    width: 50%;
   }
   /* contact */
   #contact .contact-info { 
