@@ -1,4 +1,4 @@
-window.onscroll = function () {
+window.onscroll = () => {
     const navbar = document.querySelector('.nav');
     const ul = document.getElementsByTagName('ul')[0];
     const pixTop = window.scrollY;
