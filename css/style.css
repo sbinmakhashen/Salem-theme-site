@@ -6,6 +6,7 @@
   --primary-color: #feb633;
   --secondary-color: #9f9f9f;
   --dark-bg: #2b2c2c;
+  --reddit-color: #ff4500;
 }
 
 * {
@@ -305,33 +306,6 @@ nav.bg-onscroll {
   padding-top: 1rem;
 }
 
-#portfolio .port-menu {
-  color: #cfcfcf;
-  margin-bottom: 2.2rem;
-  font-size: 1rem;
-}
-
-#portfolio .port-menu ul {
-  display: flex;
-  justify-content: center;
-  transition: all var(--transition-speed) ease-in-out;
-}
-
-#portfolio .port-menu ul li {
-  cursor: pointer;
-  margin: 0 1rem;
-}
-#portfolio .port-menu ul li:hover {
-  color: var(--primary-color);
-  transition: all var(--transition-speed) ease-in-out;
-}
-#portfolio .port-menu ul li.active {
-  color: var(--primary-color);
-  border-bottom: var(--primary-color) solid 1px;
-  padding-bottom: 4px;
-  text-align: center;
-}
-
 /* gallery grid */
 
 .projects {
@@ -357,6 +331,7 @@ img {
   background: #222;
   border-radius: 1rem;
   text-align: center;
+  cursor: default;
 }
 
 .project-card:hover {
@@ -383,78 +358,40 @@ img {
 .btn-group .btn-dark {
   padding: 0.8rem 2rem;
   font-size: 1rem;
-}
-/* .gallery-item img:hover {
-  opacity: 0.8;
-}
-.gallery-item {
-  width: 100%;
-  height: 100%;
   position: relative;
-  text-align: center;
-  transition: all var(--transition-speed) ease-in-out;
 }
-
-.gallery-item.hide {
-  display: none;
-}
-
-.gallery-item.show {
-  animation: animate var(--transition-speed) ease;
-}
-@keyframes animate {
-  0% {
-    transform: scale(0.5);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-.gallery-item .img-gal {
-  width: 100%;
-  height: 100%;
-  position: relative;
-} */
-
-/* .content-hover {
-  visibility: hidden;
-  position: absolute;
-  top: 50%;
-  bottom: 50%;
-  text-align: center;
-  margin: auto;
-  width: 100%;
-  height: 100%;
-  color: #fff;
-  border-radius: 10px;
-}
-
-.gallery-item:hover .content-hover {
-  visibility: visible;
-  background: rgba(255, 210, 125, 0.8);
-  transition: all var(--transition-speed) ease-in-out;
-}
-
-.content-hover .content {
-  visibility: hidden;
-  padding-top: 65%;
-  font-weight: 600;
-}
-.content-hover .content a {
+.btn-group button i {
+  font-size: 1.3rem;
   margin-left: 1rem;
 }
-.content-hover .content a i {
-  border-radius: 5px;
-  align-items: flex-start;
+
+.more-proj-desc {
+  display: block;
+  width: fit-content;
+  padding-top: 2rem;
+  font-size: 0.8rem;
+}
+.more-proj-desc:hover {
+  color: rgb(158, 180, 245);
 }
 
-.gallery-item:hover .content {
-  visibility: visible;
-  transform: translateY(-3.8rem);
-  transition: transform 0.6s;
-} */
+.project-title {
+  font-size: 2.1rem;
+  padding-top: 1rem;
+  color: #e0e0e0;
+}
 
+.fa-reddit-alien {
+  color: #ff4500;
+}
+
+.fa-keyboard {
+  color: #94b6ff;
+}
+
+.fa-comments {
+  color: #43cea2;
+}
 /* Hire me section */
 #hire-me {
   background: #303131;

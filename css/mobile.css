@@ -129,16 +129,7 @@
     grid-template-columns: repeat(1, 1fr);
     width: 95%;
   }
-  .content-hover.con-8:last-child {
-    top: 50%;
-    height: 100%;
-  }
-  .gallery-item:hover .content {
-    transform: translateY(-2rem);
-  }
-  .content-hover .content a {
-    font-size: 0.8rem;
-  }
+
   /* contact */
   #contact .contact-info {
     margin-top: unset;
