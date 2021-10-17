@@ -6,7 +6,7 @@
     font-size: 2.3rem;
   }
   p {
-    font-size: .9rem;
+    font-size: 0.9rem;
     font-weight: 400;
     line-height: 1.7;
   }
@@ -14,13 +14,13 @@
     width: 95%;
   }
   .btn-primary {
-    padding: .8rem 3.8rem;
+    padding: 0.8rem 3.8rem;
   }
   /* hamburger menu */
   .nav .container {
     align-items: unset;
   }
-   .nav .menu-icon {
+  .nav .menu-icon {
     padding: 1rem;
   }
   .nav .menu-icon .navicon {
@@ -30,23 +30,23 @@
     display: flex;
     flex-direction: column;
     overflow-y: none;
-}
-.nav ul {
-  display: none;
-  position: absolute;
-  top: 5rem;
-  background: #2b2c2c;
-  width: 100%;
-  left: 0;
-  transition: all var(--transition-speed) ease-in-out;
-}
-.nav ul li a.active::after,
-.nav .line-hover:hover::after {
-  width: 8%;
-}
-.nav  ul li {
-    margin: .5rem 0;
-}
+  }
+  .nav ul {
+    display: none;
+    position: absolute;
+    top: 5rem;
+    background: #2b2c2c;
+    width: 100%;
+    left: 0;
+    transition: all var(--transition-speed) ease-in-out;
+  }
+  .nav ul li a.active::after,
+  .nav .line-hover:hover::after {
+    width: 8%;
+  }
+  .nav ul li {
+    margin: 0.5rem 0;
+  }
   /* hero section */
   .hero .wrap {
     grid-template-columns: none;
@@ -77,11 +77,11 @@
     margin-left: unset;
   }
   /* service section */
-  #services .header-service{
+  #services .header-service {
     padding: 1rem 0;
   }
   #services .grid-cards h2 {
-    margin: 0 .2rem;
+    margin: 0 0.2rem;
   }
   /* Portfolio section */
   #portfolio .protfolio-content p {
@@ -90,45 +90,33 @@
   .projects {
     grid-template-columns: repeat(1, 1fr);
   }
-  .projects img{
+  .projects img {
     height: unset;
   }
-  .content-hover .content.first {
-    padding-top: 50%;
-}
-  .gallery-item.img-col,
-  .gallery-item:first-child {
-    grid-row: unset;
-    grid-column: unset;   
-}
-.content-hover.con-8:last-child {
-  top: 0;
-  height: 50%;
-}
-/* work experience */
-.w-experience .content p {
-  margin: unset;
-}
-.w-experience .w-history {
-  flex-direction: column;
-}
-/* hire me */
-#hire-me .container h1 {
-  font-size: 2.2rem;
-}
+  /* work experience */
+  .w-experience .content p {
+    margin: unset;
+  }
+  .w-experience .w-history {
+    flex-direction: column;
+  }
+  /* hire me */
+  #hire-me .container h1 {
+    font-size: 2.2rem;
+  }
 }
 
 /* media queries small screen */
 @media screen and (max-width: 500px) {
   .btn-secondary {
-    padding: .6rem .4rem;
+    padding: 0.6rem 0.4rem;
   }
   /* skills */
   #services .grid-cards {
     justify-content: unset;
     position: relative;
   }
-  #services .grid-cards h2:last-child{
+  #services .grid-cards h2:last-child {
     position: absolute;
     bottom: -3.6rem;
     right: -2rem;
@@ -141,27 +129,29 @@
     grid-template-columns: repeat(1, 1fr);
     width: 95%;
   }
-  .content-hover.con-8:last-child {
-    top: 50%;
-    height: 100%;
+
+  .btn-group .btn-dark {
+    font-size: 0.8rem;
+    padding: 0.5rem 1rem;
   }
-  .gallery-item:hover .content {
-   transform: translateY(-2rem);
-}
-  .content-hover .content a {
-    font-size: .8rem;
-  }
+
   /* contact */
-  #contact .contact-info { 
+  #contact .contact-info {
     margin-top: unset;
-}
+  }
   #contact h1,
-  #contact h1::after{ 
+  #contact h1::after {
     text-align: center;
     margin: auto;
-}
+  }
   #contact .container {
     display: flex;
     flex-direction: column;
-    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .btn-group i {
+    display: none;
+  }
 }
