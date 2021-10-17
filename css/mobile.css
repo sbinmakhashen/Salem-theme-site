@@ -113,16 +113,13 @@
   }
   /* skills */
   #services .grid-cards {
-    justify-content: unset;
-    position: relative;
+    display: block;
   }
-  #services .grid-cards h2:last-child {
-    position: absolute;
-    bottom: -3.6rem;
-    right: -2rem;
-  }
-  #services .grid-cards {
-    width: 50%;
+
+  #services .grid-cards img {
+    width: 70px;
+    padding: 0.2rem 0.5rem;
+    transform: translateX(10%);
   }
   /* work experience */
   .projects {
@@ -149,9 +146,13 @@
     flex-direction: column;
   }
 }
-
+/* small mobile screen */
 @media screen and (max-width: 320px) {
   .btn-group i {
     display: none;
+  }
+
+  #services .grid-cards {
+    transform: translateX(10%);
   }
 }
