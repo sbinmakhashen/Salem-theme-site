@@ -108,3 +108,16 @@ h1::after {
   font-size: 0.8rem;
   margin-top: 0.4rem;
 }
+/* contact icons */
+.fa-github {
+  color: #cecece !important;
+}
+.fa-github:hover {
+  color: var(--secondary-color) !important;
+}
+.fa-twitter:hover {
+  color: var(--twitter-theme) !important;
+}
+.fa-linkedin:hover {
+  color: var(--linkedin-theme) !important;
+}
