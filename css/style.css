@@ -332,6 +332,7 @@ img {
   border-radius: 1rem;
   text-align: center;
   cursor: default;
+  width: 90%;
 }
 
 .project-card:hover {
@@ -360,7 +361,7 @@ img {
   font-size: 1rem;
   position: relative;
 }
-.btn-group button i {
+.btn-group a i {
   font-size: 1.3rem;
   margin-left: 1rem;
 }
