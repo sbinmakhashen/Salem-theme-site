@@ -104,6 +104,17 @@
   #hire-me .container h1 {
     font-size: 2.2rem;
   }
+
+  /* contact */
+  .prof-email {
+    display: flex;
+    margin: auto;
+  }
+
+  .fa-envelope {
+    margin-right: 0.3rem;
+    transform: translateY(27%);
+  }
 }
 
 /* media queries small screen */
