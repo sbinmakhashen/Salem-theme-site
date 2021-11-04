@@ -7,7 +7,8 @@ window.onscroll = () => {
     ul.className = 'ul-bg';
   } else {
     navbar.classList.remove('bg-onscroll');
-    ul.className = 'ul-bg'.remove;
+    // ul.className = 'ul-bg'.remove;
+    ul.classList.remove('ul-bg');
   }
 };
 
