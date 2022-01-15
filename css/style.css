@@ -439,6 +439,11 @@ img {
 #contact .contact-info .info-group p {
 	padding: 2rem 0;
 }
+#contact .contact-info .info-group a {
+	display: inline-block;
+	color: #8f97c5;
+	margin-bottom: 2rem;
+}
 
 #contact .contact-info .social-group {
 	padding-top: 1rem;
