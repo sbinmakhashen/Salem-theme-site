@@ -340,8 +340,8 @@ img {
 
 .project-card:hover {
 	transform: scale(1.02);
-	box-shadow: 0 5px 15px rgba(125, 115, 141, 0.5);
-	transition: all 0.5s ease-in-out;
+	box-shadow: 0 5px 15px rgba(77, 73, 83, 0.5);
+	transition: all 0.1s ease-in;
 }
 
 .project-desc {
