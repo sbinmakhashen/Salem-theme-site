@@ -110,6 +110,14 @@
 		display: flex;
 		flex-direction: column-reverse;
 	}
+	.submit-btn {
+		display: inline-block;
+		width: 100%;
+		text-align: center;
+	}
+	#contact .contact-info .info-group a {
+		display: block;
+	}
 	.prof-email {
 		display: flex;
 		margin: auto;
