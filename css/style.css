@@ -444,7 +444,15 @@ img {
 	color: #8f97c5;
 	margin-bottom: 2rem;
 }
-
+#contact .contact-info .info-group .flex {
+	display: inline-flex;
+	position: relative;
+}
+#contact .contact-info .info-group .flex i {
+	position: absolute;
+	left: -22px;
+	top: 5px;
+}
 #contact .contact-info .social-group {
 	padding-top: 1rem;
 }

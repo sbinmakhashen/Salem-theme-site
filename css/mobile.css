@@ -118,6 +118,9 @@
 	#contact .contact-info .info-group a {
 		display: block;
 	}
+	#contact .contact-info .info-group .flex i {
+		top: 0;
+	}
 	.prof-email {
 		display: flex;
 		margin: auto;
