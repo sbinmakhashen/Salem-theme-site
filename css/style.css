@@ -441,8 +441,11 @@ img {
 }
 #contact .contact-info .info-group a {
 	display: inline-block;
-	color: #8f97c5;
+	color: #8d8d8d;
 	margin-bottom: 2rem;
+}
+#contact .contact-info .info-group a:active {
+	color: #cae4f1;
 }
 #contact .contact-info .info-group .flex {
 	display: inline-flex;
